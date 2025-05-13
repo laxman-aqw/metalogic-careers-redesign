@@ -222,13 +222,13 @@ const NavBar = () => {
         </ul>
 
         {/* Desktop CTA Button */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block ">
           <a
             href="/contact"
-            className="relative inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-full overflow-hidden group transition-all duration-300 shadow-md hover:shadow-lg"
+            className="relative inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-full overflow-hidden group transition-all duration-300 shadow-md hover:shadow-lg "
           >
             <span className="relative z-10">Get in Touch</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 group-hover:scale-110  transition-opacity duration-300"></span>
           </a>
         </div>
 
