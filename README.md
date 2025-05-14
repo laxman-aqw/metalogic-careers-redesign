@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Metalogic Career Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project focuses on redesigning the career page for Metalogic to improve user experience and aesthetics. The page has been revamped with new animations, layout enhancements, and interactive features to make it easier for users to explore job opportunities and interact with the available sections.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- **Redesigned Opportunities Section**: A fresh layout with animated transitions for the opportunity cards, making it visually appealing and intuitive. Users can now easily view available vacancies, their posting date, and deadlines upon hovering over each opportunity.
+- **Interactive Service Buttons**: The service buttons have been optimized from an `onClick` interaction to a `hover` effect, making it more intuitive for users to explore service options with a smooth transition.
+- **UI Improvements**: Enhanced visuals with a modern design, providing a clean and accessible layout that is responsive across devices.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React, Tailwind CSS, TypeScript
+- **Routing**: React Router for seamless navigation between pages
+- **Styling**: TailwindCSS for utility-first, responsive, and modern styling
+- **Animations**: CSS animations and transitions for smoother user interactions
+- **Deployment**: Vercel for fast and easy deployment with automatic builds from GitHub
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Design Enhancements
 
-### `npm test`
+### Opportunities Section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Hover Effects**: Added hover animations to the opportunity cards, allowing users to see more information such as posting date and deadline when they hover over an opportunity.
+- **Improved Layout**: The layout of the opportunities section has been improved to ensure the information is easy to read and well-structured.
 
-### `npm run build`
+### Service Buttons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Hover-to-Interact**: The service buttons now show their options upon hovering, eliminating the need for clicks, and providing a more user-friendly experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### UI/UX Changes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **User-Centric Design**: Made the page more accessible and easy to navigate with clear visual cues and better spacing.
+- **Responsive Design**: Ensured the page works well on all screen sizes, from mobile to desktop, using TailwindCSS's responsive utilities.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To run this project locally, follow these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:laxman-aqw/metalogic-careers-redesign.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Navigate to the project folder:
+    cd metalogic-career-page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Install the dependencies:
+    npm install
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server:
+    npm start
