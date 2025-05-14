@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import MetaLogicValues from "../components/MetalogicValues";
+import Benefits from "../components/Benefits";
 
 const Career = () => {
   return (
@@ -9,6 +10,7 @@ const Career = () => {
       <NavBar />
       <Hero />
       <MetaLogicValues />
+      <Benefits />
     </div>
   );
 };
