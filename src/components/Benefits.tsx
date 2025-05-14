@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
-const benefits = [
+type Benefit = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  color: string;
+};
+
+const benefits: Benefit[] = [
   {
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -93,9 +101,6 @@ const benefits = [
   },
 ];
 
-// The rest of the component remains the same
-
-
 const cardVariants = {
   offscreen: {
     y: 50,
@@ -116,9 +121,9 @@ const cardVariants = {
   },
 };
 
-const Benefits = () => {
+const Benefits: React.FC = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="benefits" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -133,8 +138,7 @@ const Benefits = () => {
           Life at <span className="text-blue-600">MetaLogic</span>
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-          We foster an environment where talent thrives and innovation happens
-          every day.
+          We foster an environment where talent thrives and innovation happens every day.
         </p>
       </motion.div>
 
@@ -152,14 +156,10 @@ const Benefits = () => {
               "hover:text"
             )}`}
           >
-            <div
-              className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${benefit.color}`}
-            >
+            <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${benefit.color}`}>
               <div className="w-6 h-6">{benefit.icon}</div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              {benefit.title}
-            </h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
             <p className="text-gray-600">{benefit.description}</p>
             <div className="mt-4 pt-4 border-t border-gray-100">
               <button className="text-sm font-medium text-gray-500 hover:text-gray-700 transition-colors">
@@ -177,12 +177,7 @@ const Benefits = () => {
         viewport={{ once: true }}
         className="mt-16 text-center"
       >
-        <a
-          href="#open-positions"
-          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300"
-        >
-          Explore Career Opportunities
-        </a>
+       
       </motion.div>
     </section>
   );

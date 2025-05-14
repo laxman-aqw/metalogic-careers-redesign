@@ -2,7 +2,15 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-const values = [
+type Value = {
+  icon: string;
+  color: string;
+  textColor: string;
+  title: string;
+  description: string;
+};
+
+const values: Value[] = [
   {
     icon: "📚",
     color: "from-indigo-100 to-indigo-50",
@@ -93,17 +101,15 @@ const iconVariants = {
 };
 
 const MetaLogicValues = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-20 relative overflow-hidden">
-      {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.metalogic.com.np/images/bg-pattern.png')] bg-repeat"></div>
       </div>
 
-      {/* Floating circles */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 0.1, y: 0 }}
@@ -164,7 +170,6 @@ const MetaLogicValues = () => {
               whileHover="hover"
               className="bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 group relative overflow-hidden"
             >
-              {/* Gradient background */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${value.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}
               ></div>
@@ -187,7 +192,6 @@ const MetaLogicValues = () => {
                 {value.description}
               </p>
 
-              {/* Hover effect line */}
               <motion.div
                 initial={{ width: 0 }}
                 whileHover={{ width: "100%" }}

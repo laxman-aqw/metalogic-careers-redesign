@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 
-const Blog = () => {
+const Blog: React.FC = () => {
   return (
     <div>
       <NavBar />

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Career from "./pages/Career";
@@ -8,7 +7,7 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Routes>
